@@ -3,7 +3,7 @@ using CleanArchMvc.Domain.Validation;
 
 namespace CleanArchMvc.Domain.Entities;
 
-public sealed class Product : Entity //sealed definem que a classe não pode ser herdada
+public sealed class Product : Entity //sealed definem que a classe não pode ser herdada //O Entity é o Id do product
 {
     public string Name { get; private set; }
     public string Description { get; private set; }
