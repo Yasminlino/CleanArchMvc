@@ -4,7 +4,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CleanArchMvc.WebUI.bundle.scp.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p\u002BnjAG77AokVxbUorF0EYHImpSgAc\u002Bqq7/DBwrsMRuA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Oct 2024 20:06:18 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1136"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p\u002BnjAG77AokVxbUorF0EYHImpSgAc\u002Bqq7/DBwrsMRuA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 21 Oct 2024 17:04:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CleanArchMvc.WebUI/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</AssetFile>

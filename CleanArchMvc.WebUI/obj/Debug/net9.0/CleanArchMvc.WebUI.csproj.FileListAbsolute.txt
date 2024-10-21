@@ -7,6 +7,15 @@ C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.WebUI.runtimeconfig.json
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.WebUI.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.WebUI.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Application.dll
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Domain.dll
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Infra.Data.dll
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Infra.Ioc.dll
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Infra.Ioc.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Application.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Domain.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\CleanArchMvc.Infra.Data.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.csproj.AssemblyReference.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.AssemblyInfoInputs.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.AssemblyInfo.cs
@@ -14,6 +23,7 @@ C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.RazorAssemblyInfo.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.RazorAssemblyInfo.cs
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.sourcelink.json
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\scopedcss\bundle\CleanArchMvc.WebUI.styles.css
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\scopedcss\projectbundle\CleanArchMvc.WebUI.bundle.scp.css
@@ -87,6 +97,7 @@ C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.CleanArchMvc.WebUI.props
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.CleanArchMvc.WebUI.props
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArc.70E77D8B.Up2Date
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\refint\CleanArchMvc.WebUI.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.pdb

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gukz9qqO7j6v6EhpLDP2RLoaks5oF16uhDpOo9J1AZw=",
+  "Hash": "nA/RuxMFSX/kMLO1XafVs4FKwHA3FJmrCh9e/mhkDys=",
   "Source": "CleanArchMvc.WebUI",
   "BasePath": "_content/CleanArchMvc.WebUI",
   "Mode": "Default",
@@ -2626,7 +2626,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -2670,7 +2670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         }
       ],
       "EndpointProperties": []
@@ -2698,7 +2698,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -2736,7 +2736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         },
         {
           "Name": "Content-Encoding",
@@ -2780,7 +2780,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         }
       ],
       "EndpointProperties": []
@@ -2808,7 +2808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Oct 2024 20:06:18 GMT"
+          "Value": "Mon, 21 Oct 2024 17:04:11 GMT"
         },
         {
           "Name": "Content-Encoding",

@@ -41,16 +41,16 @@ public sealed class Product : Entity //sealed definem que a classe não pode ser
             "Invalid name, too short, minimum 3 characters");
         
         DomainExceptionValidation.When(string.IsNullOrEmpty(description),
-            "Invalid name. Name is required");
+            "Invalid description. Description is required");
         
         DomainExceptionValidation.When(description.Length < 5,
-            "Invalid name, too short, minimum 5 characters");
+            "Invalid description, too short, minimum 5 characters");
 
         DomainExceptionValidation.When(price < 0, "Invalid price value");
 
         DomainExceptionValidation.When(stock < 0, "Invalid stock value");
 
-        DomainExceptionValidation.When(image.Length < 250,
+        DomainExceptionValidation.When(image.Length > 250,
             "Invalid image name, too long, maximum 250 characters");
         
         Name = name;

@@ -1,10 +1,15 @@
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\bin\Debug\net9.0\CleanArchMvc.Application.deps.json
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\bin\Debug\net9.0\CleanArchMvc.Application.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\bin\Debug\net9.0\CleanArchMvc.Application.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\bin\Debug\net9.0\CleanArchMvc.Domain.dll
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\bin\Debug\net9.0\CleanArchMvc.Domain.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.csproj.AssemblyReference.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.AssemblyInfoInputs.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.AssemblyInfo.cs
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.csproj.CoreCompileInputs.cache
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.sourcelink.json
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArc.49502176.Up2Date
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\refint\CleanArchMvc.Application.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Application\obj\Debug\net9.0\CleanArchMvc.Application.pdb
