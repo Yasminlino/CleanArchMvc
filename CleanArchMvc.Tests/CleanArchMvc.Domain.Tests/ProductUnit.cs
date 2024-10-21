@@ -104,6 +104,14 @@ public class ProductUnit
             .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
     }
 
+    [Fact(DisplayName ="Create Product With Null Image Name")] //Criar Produto com sucesso
+    public void CreateProduct_WithNullImageName_DomainExceptionInvalid()
+    {
+        Action action = () => new Product(1, "Product Name", "description", 10.50, 1, null);
+        action.Should()
+            .NotThrow<NullReferenceException>();
+    }
+
     [Fact(DisplayName ="Create Product With Empty Image Name")] //Criar Produto com sucesso
     public void CreateProduct_WithEmptyImageName_DomainExceptionInvalidId()
     {
