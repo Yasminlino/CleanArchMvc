@@ -1,5 +1,5 @@
 using System;
-using CleanArchMvc.Application.Context;
+using CleanArchMvc.Infra.Data.Context;
 using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.Domain.Interfaes;
 using Microsoft.EntityFrameworkCore;

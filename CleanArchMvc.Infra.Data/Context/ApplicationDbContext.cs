@@ -2,7 +2,7 @@ using System;
 using CleanArchMvc.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchMvc.Application.Context;
+namespace CleanArchMvc.Infra.Data.Context;
 // Classe que representa o contexto da aplicação, que é responsável pela interação com o banco de dados
 public class ApplicationDbContext : DbContext
 {
