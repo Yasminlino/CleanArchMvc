@@ -31,7 +31,8 @@ using (var scope = app.Services.CreateScope())
 
 async Task SeedDatabase(IServiceProvider services)
 {
-    var categoryRepository = services.GetRequiredService<ICategoryRepository>();
+     var categoryRepository = services.GetRequiredService<ICategoryRepository>();
+    var productRepository = services.GetRequiredService<IProductRepository>();
     
     // Verifica se as categorias já existem
     if (!(await categoryRepository.GetCategories()).Any())
@@ -40,6 +41,15 @@ async Task SeedDatabase(IServiceProvider services)
         await categoryRepository.Create(new Category(1, "Material Escolar"));
         await categoryRepository.Create(new Category(2, "Eletrônicos"));
         await categoryRepository.Create(new Category(3, "Acessórios"));
+    }
+    if (!(await productRepository.GetProductAsync()).Any())
+    {
+        // Adiciona as categorias
+        await productRepository.Create(new Product(1, "Caderno Espiral", "Caderno Espiral 100 paginas",27.5, 50,"img.jpg", 1));
+        await productRepository.Create(new Product(2, "Caderno Desenho", "Caderno Desenho 100 paginas",17.5, 50,"img.jpg", 1));
+        await productRepository.Create(new Product(3, "Calculadora", "Calculadora Cientifica",300.00, 50,"img.jpg", 2));
+        await productRepository.Create(new Product(4, "Pingente", "Pingente Coração",10.5, 50,"img.jpg", 3));
+        await productRepository.Create(new Product(5, "Cola Bastão", "Cola bastão 40g",8.00, 50,"img.jpg", 3));
     }
 }
 
