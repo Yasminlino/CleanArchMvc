@@ -33,6 +33,11 @@ public class ProductRepository : IProductRepository
         return await _productCollection.Find(p => true).ToListAsync();
     }
 
+    public async Task<IEnumerable<Product>> GetProductCategoryAsync(int? id)
+    {
+        return await _productCollection.Find(p => p.CategoryId == id).ToListAsync();
+    }
+
     public async Task<Product> Remove(Product product)
     {
         await _productCollection.DeleteOneAsync(p => p.Id == product.Id);

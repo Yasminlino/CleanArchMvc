@@ -10,6 +10,7 @@ public interface IProductRepository
 
     // Retorna uma produto pelo seu ID, se existir.
     Task<Product> GetById(int? id);
+    Task<IEnumerable<Product>> GetProductCategoryAsync(int? id);
 
     // Cria uma nova produto e retorna a produto criada.
     Task<Product> Create(Product product);
@@ -19,5 +20,4 @@ public interface IProductRepository
 
     // Remove uma produto e retorna a produto removida.
     Task<Product> Remove(Product Product);
-
 }
