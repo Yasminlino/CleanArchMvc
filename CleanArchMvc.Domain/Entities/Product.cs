@@ -5,21 +5,21 @@ namespace CleanArchMvc.Domain.Entities;
 
 public sealed class Product : Entity //sealed definem que a classe não pode ser herdada //O Entity é o Id do product
 {
-    public string Name { get; private set; }
-    public string Description { get; private set; }
+    public string? Name { get; private set; }
+    public string? Description { get; private set; }
     public double Price { get; private set; }
     public int Stock { get; private set; }
-    public string Image { get; private set; }
+    public string? Image { get; private set; }
 
     //Propriedade de navegação
     public int CategoryId { get; set; } //Chave estrangeira (propriedade de categoria do produto)
-    public Category Category { get; set; } //Propriedade que relaciona o produto com a category
+    public Category? Category { get; set; } //Propriedade que relaciona o produto com a category
 
-    public Product(int id, string name, string description, double price, int stock, string image)
+    public Product(int id, string name, string description, double price, int stock, string image, int categoryId)
     {
         DomainExceptionValidation.When(id < 0, "Invalid Id value");
         Id = id;
-        ValidateDomain(name, description, price, stock, image);
+        ValidateDomain(name, description, price, stock, image, categoryId);
     }
     public Product(string name, string description, double price, int stock, string image)
     {
@@ -32,7 +32,7 @@ public sealed class Product : Entity //sealed definem que a classe não pode ser
         CategoryId = categoryId;
     }
 
-    public void ValidateDomain(string name, string description, double price, int stock, string image)
+    public void ValidateDomain(string name, string description, double price, int stock, string? image, int categoryId = 0)
     {
         DomainExceptionValidation.When(string.IsNullOrEmpty(name),
             "Invalid name. Name is required");
@@ -58,5 +58,6 @@ public sealed class Product : Entity //sealed definem que a classe não pode ser
         Price = price;
         Stock = stock;
         Image = image;
+        CategoryId = categoryId;
     }
 }

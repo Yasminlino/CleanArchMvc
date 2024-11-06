@@ -5,7 +5,8 @@ namespace CleanArchMvc.Domain.Entities;
 
 public sealed class Category : Entity //sealed definem que a classe não pode ser herdada
 {
-    public string Name { get; private set; }
+    public string? Name { get; private set; }
+    public Product? Product { get; set; }
 
     public Category(string name){
         ValidateDomain(name);

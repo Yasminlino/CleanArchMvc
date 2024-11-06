@@ -147,3 +147,6 @@ C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.WebUI
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.pdb
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.genruntimeconfig.cache
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.WebUI\obj\Debug\net9.0\ref\CleanArchMvc.WebUI.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\refint\CleanArchMvc.WebUI.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.pdb

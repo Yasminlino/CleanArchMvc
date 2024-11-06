@@ -18,3 +18,6 @@ C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.Infra
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\refint\CleanArchMvc.Infra.Ioc.dll
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\CleanArchMvc.Infra.Ioc.pdb
 C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\ref\CleanArchMvc.Infra.Ioc.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\CleanArchMvc.Infra.Ioc.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\refint\CleanArchMvc.Infra.Ioc.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Infra.Ioc\obj\Debug\net9.0\CleanArchMvc.Infra.Ioc.pdb
