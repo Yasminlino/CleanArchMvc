@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using CleanArchMvc.Domain.Entities;
 
-namespace CleanArchMvc.Application.DTO;
+namespace CleanArchMvc.Application.DTOs;
 
 public class ProductDTO
 {
@@ -24,7 +24,7 @@ public class ProductDTO
 
     [Required(ErrorMessage = "The Price is Required")] // Obrigatório
     [Column(TypeName = "decimal(18,2)")]
-    [DisplayFormat(DataFormatString = "0:C2")]
+    [DisplayFormat(DataFormatString = "{0:C2}")]
     [DataType(DataType.Currency)]
     [DisplayName("Price")] 
     public double Price { get; private set; }

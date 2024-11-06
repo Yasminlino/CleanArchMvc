@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace CleanArchMvc.Application.DTO;
+namespace CleanArchMvc.Application.DTOs;
 
 public class CategoryDTO
 {
