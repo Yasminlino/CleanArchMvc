@@ -17,15 +17,16 @@ public class ProductRepository : IProductRepository
     }
 
 
-    public async Task<Product> Create(Product product)
+    public async Task<Product> CreateAsync(Product product)
     {
         await _productCollection.InsertOneAsync(product);
         return product;
     }
 
-    public async Task<Product> GetById(int? id)
+    public async Task<Product> GetByIdAsync(int? id)
     {
-        return await _productCollection.Find(p => p.Id == id).FirstOrDefaultAsync();
+        // return await _productCollection.Find(p => p.Id == id).FirstOrDefaultAsync();
+        return await _productCollection.Find(p => p.CategoryId == id || p.Id == id).FirstOrDefaultAsync();
     }
 
     public async Task<IEnumerable<Product>> GetProductAsync()
@@ -33,18 +34,18 @@ public class ProductRepository : IProductRepository
         return await _productCollection.Find(p => true).ToListAsync();
     }
 
-    public async Task<IEnumerable<Product>> GetProductCategoryAsync(int? id)
-    {
-        return await _productCollection.Find(p => p.CategoryId == id).ToListAsync();
-    }
+    // public async Task<IEnumerable<Product>> GetProductCategoryAsync(int? id)
+    // {
+    //     return await _productCollection.Find(p => p.CategoryId == id).ToListAsync();
+    // }
 
-    public async Task<Product> Remove(Product product)
+    public async Task<Product> RemoveAsync(Product product)
     {
         await _productCollection.DeleteOneAsync(p => p.Id == product.Id);
         return product;
     }
 
-    public async Task<Product> Update(Product product)
+    public async Task<Product> UpdateAsync(Product product)
     {
         await _productCollection.ReplaceOneAsync(p => p.Id == product.Id, product);
         return product;

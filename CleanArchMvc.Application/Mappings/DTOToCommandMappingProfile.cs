@@ -6,11 +6,11 @@ using CleanArchMvc.Domain.Entities;
 
 namespace CleanArchMvc.Application.Mappings;
 
-public class DomainToDTOMappingProfile : Profile
+public class DTOToCommandMappingProfile : Profile
 {
-    public DomainToDTOMappingProfile()
+    public DTOToCommandMappingProfile()
     {
-        CreateMap<Category, CategoryDTO>().ReverseMap();
-        CreateMap<Product, ProductDTO>().ReverseMap();
+        CreateMap<ProductDTO, ProductCreateCommand>();
+        CreateMap<ProductDTO, ProductUpdateCommand>();
     }
 }

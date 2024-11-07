@@ -8,6 +8,7 @@ using MongoDB.Driver;
 using CleanArchMvc.Application.Mappings;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.Services;
+using MediatR;
 
 namespace CleanArchMvc.Infra.Ioc;
 
@@ -32,6 +33,9 @@ public static class DependencyInjection
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+        var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
+        services.AddMediatR(myhandlers);
 
         return services;
     }
