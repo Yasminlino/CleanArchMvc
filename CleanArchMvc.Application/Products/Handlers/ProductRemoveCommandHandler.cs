@@ -17,7 +17,7 @@ public class ProductRemoveCommandHandler : IRequestHandler<ProductRemoveCommand,
 
     public async Task<Product> Handle(ProductRemoveCommand request, CancellationToken cancellationToken)
     {
-        var product = _productRepository.GetByIdAsync(request.Id);
+        var product = await _productRepository.GetByIdAsync(request.Id);
         if(product == null)
         {
             throw new ApplicationException($"Entity could not be found.");

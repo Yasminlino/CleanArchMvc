@@ -58,10 +58,10 @@ public class ProductService : IProductService
         return  _mapper.Map<IEnumerable<ProductDTO>>(result);
     }
 
-    public async Task Remove(int id)
+     public async Task Remove(int? id)
     {
-        var productRemoveCommand = new ProductRemoveCommand(id);
-        if(productRemoveCommand == null)
+        var productRemoveCommand = new ProductRemoveCommand(id.Value);
+        if (productRemoveCommand == null)
             throw new Exception($"Entity could not be loaded.");
 
         await _mediator.Send(productRemoveCommand);

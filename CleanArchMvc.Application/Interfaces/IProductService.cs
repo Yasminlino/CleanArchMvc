@@ -10,6 +10,6 @@ public interface IProductService
     // Task<IEnumerable<ProductDTO>> GetProductCategory(int? id);
     Task<IEnumerable<ProductDTO>> GetProducts();
 
-    Task Remove(int id);
+    Task Remove(int? id);
     Task Update(ProductDTO productDTO);
 }

@@ -298,3 +298,5 @@ c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\CleanArchMvc.WebUI.genruntimeconfig.cache
 c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\obj\Debug\net9.0\ref\CleanArchMvc.WebUI.dll
 c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\MediatR.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.WebUI\bin\Debug\net9.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
