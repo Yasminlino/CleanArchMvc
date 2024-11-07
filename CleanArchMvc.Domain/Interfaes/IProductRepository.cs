@@ -20,4 +20,8 @@ public interface IProductRepository
 
     // Remove uma produto e retorna a produto removida.
     Task<Product> Remove(Product Product);
+    Task<Product> CreateAsync(Product product);
+    Task<Product> GetByIdAsync(int id);
+    Task<Product> UpdateAsync(object product);
+    Task<Product> RemoveAsync(Task<Product> product);
 }
