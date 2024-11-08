@@ -4,8 +4,10 @@ using CleanArchMvc.Infra.Data.Configurations;
 using Microsoft.Extensions.DependencyInjection;
 using CleanArchMvc.Domain.Interfaces;
 using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.Application.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -15,6 +17,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -31,7 +34,7 @@ using (var scope = app.Services.CreateScope())
 
 async Task SeedDatabase(IServiceProvider services)
 {
-     var categoryRepository = services.GetRequiredService<ICategoryRepository>();
+    var categoryRepository = services.GetRequiredService<ICategoryRepository>();
     var productRepository = services.GetRequiredService<IProductRepository>();
     
     // Verifica se as categorias já existem

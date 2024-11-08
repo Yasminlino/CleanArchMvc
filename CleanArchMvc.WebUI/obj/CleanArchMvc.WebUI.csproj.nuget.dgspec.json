@@ -4,14 +4,14 @@
     "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
+    "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
+        "projectUniqueName": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
         "projectName": "CleanArchMvc.Application",
-        "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
+        "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
         "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\obj\\",
+        "outputPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -114,6 +114,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -134,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
+    "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
+        "projectUniqueName": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
         "projectName": "CleanArchMvc.Infra.Data",
-        "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
+        "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\obj\\",
+        "outputPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -232,14 +238,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
-                "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj"
+              "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj": {
+                "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj"
               },
               "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
                 "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
               },
-              "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj"
+              "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj": {
+                "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj"
               }
             }
           }
@@ -338,6 +344,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

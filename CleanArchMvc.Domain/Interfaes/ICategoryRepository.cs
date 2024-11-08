@@ -9,7 +9,7 @@ public interface ICategoryRepository
     Task<IEnumerable<Category>> GetCategories();
 
     // Retorna uma categoria pelo seu ID, se existir.
-    Task<Category> GetById(int? id);
+    Task<Category> GetByIdAsync(int? id);
 
     // Cria uma nova categoria e retorna a categoria criada.
     Task<Category> Create(Category category);
@@ -19,5 +19,6 @@ public interface ICategoryRepository
 
     // Remove uma categoria e retorna a categoria removida.
     Task<Category> Remove(Category category);
+    Task<int> GetLastCategoryId();
 
 }

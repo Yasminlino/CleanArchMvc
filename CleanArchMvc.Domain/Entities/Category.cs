@@ -1,18 +1,19 @@
 using System;
 using CleanArchMvc.Domain.Validation;
+using MongoDB.Bson;
 
 namespace CleanArchMvc.Domain.Entities;
 
 public sealed class Category : Entity //sealed definem que a classe não pode ser herdada
 {
-    public string? Name { get; private set; }
+    public string Name { get; private set; }
     public Product? Product { get; set; }
 
     public Category(string name){
         ValidateDomain(name);
     }
     public Category(int id, string name){
-        DomainExceptionValidation.When(id < 0, "Invalid Id Value");
+        DomainExceptionValidation.When(id <  0, "Invalid Id Value");
         Id = id;
         ValidateDomain(name);
     }
@@ -33,6 +34,11 @@ public sealed class Category : Entity //sealed definem que a classe não pode se
             "Invalid name, too short, minimum 3 characters");
 
         Name = name;
+    }
+
+    private void NextId (ObjectId id)
+    {
+        
     }
 
 }

@@ -18,11 +18,21 @@ public class CategoryRepository : ICategoryRepository
 
     public async Task<Category> Create(Category category)
     {
+        var existingCategory = await _categoryCollection.Find(c => c.Id == 0).FirstOrDefaultAsync();
+        if (existingCategory != null)
+        {
+            var maxCategory = await _categoryCollection.Find(Builders<Category>.Filter.Empty)
+            .SortByDescending(c => c.Id)
+            .FirstOrDefaultAsync();
+            category.Id = maxCategory?.Id + 1 ?? 1;
+        }
+
+        // Caso contrário, insira o novo documento
         await _categoryCollection.InsertOneAsync(category);
         return category;
     }
 
-    public async Task<Category> GetById(int? id)
+    public async Task<Category> GetByIdAsync(int? id)
     {
         return await _categoryCollection.Find(c => c.Id == id).FirstOrDefaultAsync();
     }
@@ -42,5 +52,15 @@ public class CategoryRepository : ICategoryRepository
     {
         await _categoryCollection.ReplaceOneAsync(c => c.Id == category.Id, category);
         return category;
+    }
+
+    public async Task<int> GetLastCategoryId()
+    {
+        var lastCategory = await _categoryCollection.Find(FilterDefinition<Category>.Empty)
+            .SortByDescending(c => c.Id)
+            .Limit(1)
+            .FirstOrDefaultAsync();
+
+        return lastCategory?.Id ?? 0;  // Retorna 0 se não houver categorias na coleção
     }
 }

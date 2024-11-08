@@ -23,10 +23,10 @@ public class CategoryService : ICategoryService
         await _categoryRepository.Create(categoryEntity);
     }
 
-    public async Task<IEnumerable<CategoryDTO>> GetById(int? id)
+    public async Task<CategoryDTO> GetByIdAsync(int? id)
     {
-        var categoryEntity = await _categoryRepository.GetById(id);
-        return _mapper.Map<IEnumerable<CategoryDTO>>(categoryEntity);
+        var categoryEntity = await _categoryRepository.GetByIdAsync(id);
+        return _mapper.Map<CategoryDTO>(categoryEntity);
     }
 
     public async Task<IEnumerable<CategoryDTO>> GetCategories()
@@ -37,7 +37,7 @@ public class CategoryService : ICategoryService
 
     public async Task Remove(int? id)
     {
-        var categoryEntity = _categoryRepository.GetById(id).Result;
+        var categoryEntity = _categoryRepository.GetByIdAsync(id).Result;
         await _categoryRepository.Remove(categoryEntity);
     }
 

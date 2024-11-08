@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {}
+    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
         "projectName": "CleanArchMvc.Domain",
-        "projectPath": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
-        "packagesPath": "C:\\Users\\yasmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\obj\\",
+        "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,13 +36,18 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -66,41 +64,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.5.24307.3/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {
+    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
         "projectName": "CleanArchMvc.Domain.Tests",
-        "projectPath": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
-        "packagesPath": "C:\\Users\\yasmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\obj\\",
+        "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Tests\\CleanArchMvc.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
-                "projectPath": "C:\\Users\\yasmi\\OneDrive\\Área de Trabalho\\Cursos\\CleanArchMvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
+              "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+                "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
               }
             }
           }
@@ -113,9 +104,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -164,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.5.24307.3/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -22,3 +22,4 @@ C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\refint\CleanArchMvc.Domain.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.pdb
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\ref\CleanArchMvc.Domain.dll
+c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.csproj.AssemblyReference.cache

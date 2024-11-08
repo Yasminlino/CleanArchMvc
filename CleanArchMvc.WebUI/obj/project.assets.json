@@ -1220,6 +1220,9 @@
       "CleanArchMvc.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MongoDB.Driver": "3.0.0"
+        },
         "compile": {
           "bin/placeholder/CleanArchMvc.Domain.dll": {}
         },
@@ -3362,7 +3365,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "CleanArchMvc.Infra.Ioc >= 1.0.0"
+      "CleanArchMvc.Infra.Ioc >= 1.0.0",
+      "MongoDB.Driver >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -3410,6 +3414,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "MongoDB.Driver": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

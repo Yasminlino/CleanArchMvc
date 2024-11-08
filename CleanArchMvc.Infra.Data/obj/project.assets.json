@@ -458,6 +458,9 @@
       "CleanArchMvc.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MongoDB.Driver": "3.0.0"
+        },
         "compile": {
           "bin/placeholder/CleanArchMvc.Domain.dll": {}
         },
@@ -1307,11 +1310,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
+      "projectUniqueName": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
       "projectName": "CleanArchMvc.Infra.Data",
-      "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
+      "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\obj\\",
+      "outputPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
