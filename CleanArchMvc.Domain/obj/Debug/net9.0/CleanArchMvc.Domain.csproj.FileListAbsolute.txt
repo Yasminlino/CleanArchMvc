@@ -13,6 +13,7 @@ C:\Users\yasmi\OneDrive\Área de Trabalho\Cursos\CleanArchMvc\CleanArchMvc.Domai
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\bin\Debug\net9.0\CleanArchMvc.Domain.deps.json
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\bin\Debug\net9.0\CleanArchMvc.Domain.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\bin\Debug\net9.0\CleanArchMvc.Domain.pdb
+C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.csproj.AssemblyReference.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.AssemblyInfoInputs.cache
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.AssemblyInfo.cs
@@ -22,4 +23,3 @@ C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArch
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\refint\CleanArchMvc.Domain.dll
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.pdb
 C:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\ref\CleanArchMvc.Domain.dll
-c:\Users\yasminl\Desktop\LINGUAGENS\CleanArchitecture\curso_cleanarqvc\CleanArchMvc.Domain\obj\Debug\net9.0\CleanArchMvc.Domain.csproj.AssemblyReference.cache

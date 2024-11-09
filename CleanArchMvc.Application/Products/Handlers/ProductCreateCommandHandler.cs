@@ -9,15 +9,18 @@ namespace CleanArchMvc.Application.Products.Handlers;
 public class ProductCreateCommandHadler : IRequestHandler<ProductCreateCommand, Product>
 {
     private readonly IProductRepository _productRepository;
+    private readonly ICategoryRepository _categoryRepository;
 
-    public ProductCreateCommandHadler(IProductRepository productRepository)
+    public ProductCreateCommandHadler(IProductRepository productRepository, ICategoryRepository categoryRepository)
     {
         _productRepository = productRepository;
+        _categoryRepository = categoryRepository;
     }
 
     public async Task<Product> Handle(ProductCreateCommand request, CancellationToken cancellationToken)
     {
-        var product = new Product(request.Name, request.Description, request.Price, request.Stock, request.Image);
+    
+        var product = new Product(request.Name, request.Description, request.Price, request.Stock, request.Image, request.CategoryId, request.Category);
 
         if(product == null)
         {

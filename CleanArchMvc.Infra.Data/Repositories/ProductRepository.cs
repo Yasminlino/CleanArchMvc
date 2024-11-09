@@ -19,6 +19,16 @@ public class ProductRepository : IProductRepository
 
     public async Task<Product> CreateAsync(Product product)
     {
+        var existingProduct = await _productCollection.Find(c => c.Id == 0).FirstOrDefaultAsync();
+        if (existingProduct != null || product.Id == 0)
+        {
+            var maxProduct = await _productCollection.Find(Builders<Product>.Filter.Empty)
+            .SortByDescending(c => c.Id)
+            .FirstOrDefaultAsync();
+            product.Id = maxProduct?.Id + 1 ?? 1;
+        }
+
+        // Caso contrário, insira o novo documento
         await _productCollection.InsertOneAsync(product);
         return product;
     }
@@ -34,10 +44,10 @@ public class ProductRepository : IProductRepository
         return await _productCollection.Find(p => true).ToListAsync();
     }
 
-    // public async Task<IEnumerable<Product>> GetProductCategoryAsync(int? id)
-    // {
-    //     return await _productCollection.Find(p => p.CategoryId == id).ToListAsync();
-    // }
+    public async Task<IEnumerable<Product>> GetProductCategoryAsync(int id)
+    {
+        return await _productCollection.Find(p => p.CategoryId == id).ToListAsync();
+    }
 
     public async Task<Product> RemoveAsync(Product product)
     {

@@ -9,15 +9,22 @@ namespace CleanArchMvc.Application.Products.Handlers;
 public class ProductCreateCommandHandler : IRequestHandler<ProductCreateCommand, Product>
 {
     private readonly IProductRepository _productRepository;
+    private readonly ICategoryRepository _categoryRepository;
 
-    public ProductCreateCommandHandler(IProductRepository productRepository)
+    public ProductCreateCommandHandler(IProductRepository productRepository, ICategoryRepository categoryRepository)
     {
         _productRepository = productRepository;
+        _categoryRepository = categoryRepository;
     }
 
     public async Task<Product> Handle(ProductCreateCommand request, CancellationToken cancellationToken)
     {
-        var product = new Product(request.Name, request.Description, request.Price, request.Stock, request.Image);
+        Category category = await _categoryRepository.GetByIdAsync(request.CategoryId);
+        if(category == null)
+            throw new ArgumentException("Categoria não encontrada.");
+
+        
+        var product = new Product(request.Name, request.Description, request.Price, request.Stock, request.Image, request.CategoryId, category);
 
         if(product == null)
         {
@@ -25,7 +32,6 @@ public class ProductCreateCommandHandler : IRequestHandler<ProductCreateCommand,
         }
         else
         {
-            product.CategoryId = request.CategoryId;
             return await _productRepository.CreateAsync(product);
         }
     }

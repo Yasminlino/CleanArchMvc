@@ -11,7 +11,7 @@ public interface IProductRepository
     // Retorna uma produto pelo seu ID, se existir.
     Task<Product> GetByIdAsync(int? id);
 
-    // Task<IEnumerable<Product>> GetProductCategoryAsync(int? id);
+    Task<IEnumerable<Product>> GetProductCategoryAsync(int id);
 
     // Cria uma nova produto e retorna a produto criada.
     Task<Product> CreateAsync(Product product);

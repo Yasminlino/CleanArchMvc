@@ -14,29 +14,29 @@ public class ProductDTO
     [MinLength(3)] //Minimo de caracters
     [MaxLength(100)] //Maximo de caracters
     [DisplayName("Name")]  
-    public string? Name { get; private set; }
+    public string? Name { get; set; }
 
     [Required(ErrorMessage = "The Description is Required")] // Obrigatório
     [MinLength(5)] //Minimo de caracters
     [MaxLength(200)] //Maximo de caracters
     [DisplayName("Description")]  
-    public string? Description { get; private set; }
+    public string? Description { get; set; }
 
     [Required(ErrorMessage = "The Price is Required")] // Obrigatório
     [Column(TypeName = "decimal(18,2)")]
     [DisplayFormat(DataFormatString = "{0:C2}")]
     [DataType(DataType.Currency)]
     [DisplayName("Price")] 
-    public double Price { get; private set; }
+    public double Price { get; set; }
 
     [Required(ErrorMessage = "The Stock is Required")] // Obrigatório
     [Range(1, 9999)]
     [DisplayName("Stock")]
-    public int Stock { get; private set; }
+    public int Stock { get; set; }
 
     [MaxLength(250)]
     [DisplayName("Image")]
-    public string? Image { get; private set; }
+    public string? Image { get; set; }
 
     public Category? Category { get; set; } 
 

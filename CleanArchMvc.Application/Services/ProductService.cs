@@ -28,7 +28,17 @@ public class ProductService : IProductService
         await _mediator.Send(productCreateCommand);
     }
 
-    public async Task<IEnumerable<ProductDTO>> GetById(int id)
+    public async Task<ProductDTO> GetById(int id)
+    {
+        var productsQuery = new GetProductByIdQuery(id);
+        if(productsQuery == null)
+            throw new Exception($"Entity could not be loaded.");
+
+        var result = await _mediator.Send(productsQuery);
+        return _mapper.Map<ProductDTO>(result);
+    }
+
+    public async Task<IEnumerable<ProductDTO>> GetProductCategoryAsync(int id)
     {
         var productsQuery = new GetProductByIdQuery(id);
         if(productsQuery == null)
@@ -37,16 +47,6 @@ public class ProductService : IProductService
         var result = await _mediator.Send(productsQuery);
         return _mapper.Map<IEnumerable<ProductDTO>>(result);
     }
-
-    // public async Task<IEnumerable<ProductDTO>> GetProductCategory(int id)
-    // {
-    //     var productsQuery = new GetProductByIdQuery(id);
-    //     if(productsQuery == null)
-    //         throw new Exception($"Entity could not be loaded.");
-
-    //     var result = await _mediator.Send(productsQuery);
-    //     return _mapper.Map<IEnumerable<ProductDTO>>(result);
-    // }
 
     public async Task<IEnumerable<ProductDTO>> GetProducts()
     {
@@ -58,9 +58,9 @@ public class ProductService : IProductService
         return  _mapper.Map<IEnumerable<ProductDTO>>(result);
     }
 
-     public async Task Remove(int? id)
+     public async Task Remove(int id)
     {
-        var productRemoveCommand = new ProductRemoveCommand(id.Value);
+        var productRemoveCommand = new ProductRemoveCommand(id);
         if (productRemoveCommand == null)
             throw new Exception($"Entity could not be loaded.");
 
