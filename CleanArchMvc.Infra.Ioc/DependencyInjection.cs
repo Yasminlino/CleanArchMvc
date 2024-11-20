@@ -9,7 +9,10 @@ using CleanArchMvc.Application.Mappings;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.Services;
 using MediatR;
-
+using CleanArchMvc.Infra.Data.Identity;
+using Microsoft.AspNetCore.Identity;
+using CleanArchMvc.Infra.Data.Context;
+using CleanArchMvc.Domain.Account;
 namespace CleanArchMvc.Infra.Ioc;
 
 public static class DependencyInjection
@@ -26,10 +29,26 @@ public static class DependencyInjection
             return new MongoClient(settings.ConnectionString);
         });
 
-        // Registre seus repositórios
+        // Registro do IMongoDatabase
+        services.AddSingleton<IMongoDatabase>(serviceProvider =>
+        {
+            var settings = serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value;
+            var client = serviceProvider.GetRequiredService<IMongoClient>();
+            return client.GetDatabase(settings.DatabaseName); // Nome do banco de dados configurado no appsettings.json
+        });
+
+        // Agora o MongoDbContext irá pegar a instância de IMongoDatabase já registrada.
+        services.AddScoped<MongoDbContext>();
+
+        // Registre seus repositórios e outros serviços
+        services.AddScoped<IRoleStore<IdentityRole>, MongoRoleStore>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
-        
+        services.AddScoped<SeedUserRoleInitial>(); // Registro de SeedUserRoleInitial
+        services.AddScoped<IAuthenticate, AuthenticateService>();
+        services.AddScoped<IUserStore<ApplicationUser>, MongoUserStore>();
+
+
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
@@ -40,3 +59,4 @@ public static class DependencyInjection
         return services;
     }
 }
+

@@ -14,5 +14,9 @@ namespace CleanArchMvc.WebUI.Controllers
         {
             return View();
         }
+        public IActionResult _LoginPartial()
+        {
+            return View("_LoginPartial");
+        }
     }
 }

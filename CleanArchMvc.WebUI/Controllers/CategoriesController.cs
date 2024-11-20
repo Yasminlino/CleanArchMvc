@@ -1,11 +1,13 @@
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Domain.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace CleanArchMvc.WebUI.Controllers;
+[Authorize]
 public class CategoriesController : Controller
 {
     private readonly ICategoryService _categoryService;
@@ -71,7 +73,8 @@ public class CategoriesController : Controller
         return View(category);
     }
 
-    [HttpGet]
+    [Authorize(Roles ="Admin")]
+    [HttpGet()]
     public async Task<IActionResult> Delete(int? id)
     {
         if(id == null)
