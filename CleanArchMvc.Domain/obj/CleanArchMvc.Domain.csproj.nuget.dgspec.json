@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {}
+    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+    "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
         "projectName": "CleanArchMvc.Domain",
-        "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
         "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\obj\\",
+        "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.MongoDB": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.0.0, )"

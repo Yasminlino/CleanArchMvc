@@ -48,7 +48,6 @@ public static class DependencyInjection
         services.AddScoped<IAuthenticate, AuthenticateService>();
         services.AddScoped<IUserStore<ApplicationUser>, MongoUserStore>();
 
-
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddAutoMapper(typeof(DomainToDTOMappingProfile));

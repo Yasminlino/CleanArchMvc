@@ -1,9 +1,6 @@
-using System;
-using System.Reflection.Metadata;
 using CleanArchMvc.Domain.Account;
+using CleanArchMvc.Infra.Data.Identity;
 using Microsoft.AspNetCore.Identity;
-
-namespace CleanArchMvc.Infra.Data.Identity;
 
 public class AuthenticateService : IAuthenticate
 {
@@ -19,22 +16,27 @@ public class AuthenticateService : IAuthenticate
     public async Task<bool> Authenticate(string email, string password)
     {
         var user = await _userManager.FindByEmailAsync(email);
-        if (user != null)
+        if (user == null)
         {
-            var result = await _signInManager.PasswordSignInAsync(user, password, false, false);
-            return result.Succeeded;
+            return false; // Usuário não encontrado
         }
-        return false;
+
+        var result = await _signInManager.PasswordSignInAsync(user, password, false, false);
+        return result.Succeeded;  // Retorna sucesso ou falha da autenticação
     }
 
-   public async Task<bool> RegisterUser(string email, string password)
+    public async Task<bool> RegisterUser(string email, string password)
     {
-        var user = new ApplicationUser { UserName = email, Email = email };
-        var result = await _userManager.CreateAsync(user, password); // O password é tratado corretamente
-        return result.Succeeded;
+        var user = new ApplicationUser
+        {
+            UserName = email,
+            Email = email
+        };
+
+        var result = await _userManager.CreateAsync(user, password);
+        return result.Succeeded; // Retorna se o registro foi bem-sucedido
     }
 
-    
     public async Task Logout()
     {
         await _signInManager.SignOutAsync();

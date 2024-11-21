@@ -13,8 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 
-// Conectar ao MongoDB
-
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = true; // Exige um dígito
@@ -23,7 +21,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     options.Password.RequireNonAlphanumeric = true; // Exige caracteres especiais
     options.Password.RequiredLength = 8; // Exige no mínimo 8 caracteres
     options.Password.RequiredUniqueChars = 1; // Exige pelo menos 1 caractere único
-});
+})
+.AddUserStore<MongoUserStore>() // Aqui você está especificando a implementação do MongoUserStore
+.AddRoleStore<MongoRoleStore>() // Se você está usando roles, registre também o MongoRoleStore
+.AddDefaultTokenProviders();
+
 
 
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));

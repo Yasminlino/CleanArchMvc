@@ -2097,6 +2097,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Identity.MongoDB": "1.0.2",
           "MongoDB.Driver": "3.0.0"
         },
         "compile": {
@@ -6496,8 +6499,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
-              "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
+            "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+              "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
             }
           }
         }

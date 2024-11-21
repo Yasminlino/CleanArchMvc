@@ -2176,6 +2176,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Identity.MongoDB": "1.0.2",
           "MongoDB.Driver": "3.0.0"
         },
         "compile": {
@@ -6735,11 +6738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
       "projectName": "CleanArchMvc.WebUI",
-      "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
+      "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
       "packagesPath": "C:\\Users\\yasminl\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yasminl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6754,8 +6757,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj": {
-              "projectPath": "c:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj"
+            "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj": {
+              "projectPath": "C:\\Users\\yasminl\\Desktop\\LINGUAGENS\\CleanArchitecture\\curso_cleanarqvc\\CleanArchMvc.Infra.Ioc\\CleanArchMvc.Infra.Ioc.csproj"
             }
           }
         }

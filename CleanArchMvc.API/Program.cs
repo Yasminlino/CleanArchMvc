@@ -16,10 +16,18 @@ builder.Services.AddInfrastructureApi(builder.Configuration);
 builder.Services.AddControllers(); // Sem Views, apenas para API
 
 // Configuração do MongoDB e Identity...
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddUserStore<MongoUserStore>()
-    .AddRoleStore<MongoRoleStore>()
-    .AddDefaultTokenProviders();
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = true; // Exige um dígito
+    options.Password.RequireLowercase = true; // Exige letras minúsculas
+    options.Password.RequireUppercase = true; // Exige letras maiúsculas
+    options.Password.RequireNonAlphanumeric = true; // Exige caracteres especiais
+    options.Password.RequiredLength = 8; // Exige no mínimo 8 caracteres
+    options.Password.RequiredUniqueChars = 1; // Exige pelo menos 1 caractere único
+})
+.AddUserStore<MongoUserStore>() // Aqui você está especificando a implementação do MongoUserStore
+.AddRoleStore<MongoRoleStore>() // Se você está usando roles, registre também o MongoRoleStore
+.AddDefaultTokenProviders();
 
 builder.Services.AddSwaggerGen();
 

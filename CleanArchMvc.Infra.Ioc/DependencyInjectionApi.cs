@@ -47,7 +47,7 @@ public static class DependencyInjection
 
         // Registro de serviços de autenticação
         services.AddScoped<IAuthenticate, AuthenticateService>(); // Serviço para autenticação
-        services.AddScoped<IUserStore<ApplicationUser>, MongoUserStore>(); // Armazenamento de usuários do MongoDB
+        services.AddScoped<IUserStore<ApplicationUser>, MongoUserStore>();
 
         // Registro dos serviços de aplicação
         services.AddScoped<IProductService, ProductService>(); // Serviço de negócios para produtos
