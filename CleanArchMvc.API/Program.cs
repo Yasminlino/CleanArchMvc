@@ -2,7 +2,9 @@
 
 using CleanArchMvc.Application.Mappings;
 using CleanArchMvc.Infra.Data.Identity;
+using CleanArchMvc.Infra.Ioc;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 // Adiciona a camada de infraestrutura e dependências
 builder.Services.AddInfrastructureApi(builder.Configuration);
+builder.Services.AddInfrastructureJWT(builder.Configuration);
+builder.Services.AddInfrastructureSwagger();
 
 // Adiciona Controllers com suporte para API
 builder.Services.AddControllers(); // Sem Views, apenas para API
@@ -29,8 +33,6 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddRoleStore<MongoRoleStore>() // Se você está usando roles, registre também o MongoRoleStore
 .AddDefaultTokenProviders();
 
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
 // Configura o pipeline de requisições
@@ -47,6 +49,7 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseStatusCodePages();
 app.UseRouting();
 
 app.UseAuthentication();

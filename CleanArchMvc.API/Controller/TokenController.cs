@@ -5,6 +5,8 @@ using CleanArchMvc.API.DTO;
 using CleanArchMvc.Domain.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using CleanArchMvc.Infra.Ioc;
+using Microsoft.AspNetCore.Authorization;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -36,6 +38,7 @@ public class TokenController : ControllerBase
     }
 
     [HttpPost("LoginUser")]
+    [AllowAnonymous]
     public async Task<ActionResult<UserToken>> Login([FromBody] LoginDTO userInfo)
     {
         var result = await _authenticate.Authenticate(userInfo.Email, userInfo.Password);
