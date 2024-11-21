@@ -13,34 +13,6 @@ public class MongoUserStore : IUserPasswordStore<ApplicationUser>
         _users = database.GetCollection<ApplicationUser>("Users");
     }
 
-    public Task<ApplicationUser> FindByEmailAsync(string email, CancellationToken cancellationToken)
-    {
-        // Encontre o usuário no banco de dados MongoDB pelo email
-        return _users.Find(u => u.Email == email).FirstOrDefaultAsync(cancellationToken);
-    }
-
-    public Task<string> GetEmailAsync(ApplicationUser user, CancellationToken cancellationToken)
-    {
-        return Task.FromResult(user.Email);
-    }
-
-    public Task SetEmailAsync(ApplicationUser user, string email, CancellationToken cancellationToken)
-    {
-        user.Email = email;
-        return Task.CompletedTask;
-    }
-
-    public Task<string> GetNormalizedEmailAsync(ApplicationUser user, CancellationToken cancellationToken)
-    {
-        return Task.FromResult(user.NormalizedEmail);
-    }
-
-    public Task SetNormalizedEmailAsync(ApplicationUser user, string normalizedEmail, CancellationToken cancellationToken)
-    {
-        user.NormalizedEmail = normalizedEmail;
-        return Task.CompletedTask;
-    }
-
     public Task<IdentityResult> CreateAsync(ApplicationUser user, CancellationToken cancellationToken)
     {
         _users.InsertOne(user);

@@ -20,6 +20,7 @@ public class TokenController : ControllerBase
     }
 
     [HttpPost("CreateUser")]
+    // [ApiExplorerSettings(IgnoreApi = true)]
     public async Task<ActionResult> CreateUser([FromBody] LoginDTO userInfo)
     {
         var result = await _authenticate.RegisterUser(userInfo.Email, userInfo.Password);
